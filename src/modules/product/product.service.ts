@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Product } from './product.entity';
 import { Repository } from 'typeorm';
+import { PageDto } from 'src/dtos/PageDto';
 
 @Injectable()
 export class ProductService {
@@ -12,6 +13,13 @@ export class ProductService {
 
   findAll(): Promise<Product[]> {
     return this.productRepository.find();
+  }
+
+  findByPage(pageParam: PageDto): Promise<Product[]> {
+    return this.productRepository.find({
+      skip: (pageParam.curPage - 1) * pageParam.pageSize,
+      take: pageParam.pageSize,
+    });
   }
 
   findOne(id: number): Promise<Product | null> {

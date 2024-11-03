@@ -4,8 +4,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ProductModule } from '../product/product.module';
-import { Product } from '../product/product.entity';
+import { ProductModule } from '../modules/product/product.module';
+import { Product } from '../modules/product/product.entity';
 
 @Module({
   imports: [

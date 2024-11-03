@@ -1,6 +1,7 @@
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { ProductService } from './product.service';
 import { Product } from './product.entity';
+import { PageDto } from 'src/dtos/PageDto';
 
 @Controller({
   path: '/product',
@@ -8,8 +9,8 @@ import { Product } from './product.entity';
 export class ProductController {
   constructor(private readonly productService: ProductService) {}
 
-  @Get()
-  getProductByPage(): Promise<Product[]> {
-    return this.productService.findAll();
+  @Post('/page')
+  getProductByPage(@Body() paging: PageDto): Promise<Product[]> {
+    return this.productService.findByPage(paging);
   }
 }
