@@ -1,9 +1,9 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { ValidationPipe } from '@nestjs/common';
-import { TransformInterceptor } from 'src/interceptors/transform.interceptor';
-import { CacheInterceptor } from 'src/interceptors/cache.interceptor';
-import { TimeoutInterceptor } from 'src/interceptors/timeout.interceptor';
+import { TransformInterceptor } from 'src/common/interceptors/transform.interceptor';
+import { CacheInterceptor } from 'src/common/interceptors/cache.interceptor';
+import { TimeoutInterceptor } from 'src/common/interceptors/timeout.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

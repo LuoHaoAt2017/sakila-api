@@ -8,8 +8,8 @@ import {
 } from '@nestjs/common';
 import { ProductService } from './product.service';
 import { Product } from './product.entity';
-import { PageDto } from 'src/dtos/PageDto';
-import { LoggingInterceptor } from 'src/interceptors/logging.interceptor';
+import { PageDto } from 'src/common/dtos/PageDto';
+import { LoggingInterceptor } from 'src/common/interceptors/logging.interceptor';
 
 @UseInterceptors(LoggingInterceptor) // 我们传递了 LoggingInterceptor 类（而不是实例），将实例化的责任留给框架并启用依赖注入。
 @Controller({
