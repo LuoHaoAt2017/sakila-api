@@ -1,0 +1,131 @@
+2024-11-24 09:44:43,694 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 6.2.5.Final
+2024-11-24 09:44:43,702 INFO c.i.s.SpringbootApplication Starting SpringbootApplication using Java 1.8.0_151 on 192.168.0.194 with PID 23447 (/Users/luohao/github/sakila-api/target/classes started by luohao in /Users/luohao/github/sakila-api)
+2024-11-24 09:44:43,703 INFO c.i.s.SpringbootApplication No active profile set, falling back to 1 default profile: "default"
+2024-11-24 09:44:45,315 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8088 (http)
+2024-11-24 09:44:45,329 INFO o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:44:45,329 INFO o.a.c.c.StandardService Starting service [Tomcat]
+2024-11-24 09:44:45,329 INFO o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-11-24 09:44:45,499 INFO o.a.c.c.C.[.[.[/] Initializing Spring embedded WebApplicationContext
+2024-11-24 09:44:45,500 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1737 ms
+2024-11-24 09:44:46,230 INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static java.lang.String com.imooc.springboot.utils.MessageUtils.configLang
+2024-11-24 09:44:46,635 INFO o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:44:46,658 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-24 09:44:46,669 INFO c.i.s.SpringbootApplication Started SpringbootApplication in 3.595 seconds (JVM running for 4.127)
+2024-11-24 09:45:03,574 INFO o.a.c.c.C.[.[.[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 09:45:03,574 INFO o.s.w.s.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2024-11-24 09:45:03,576 INFO o.s.w.s.DispatcherServlet Completed initialization in 2 ms
+2024-11-24 09:45:03,688 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+2024-11-24 09:45:03,942 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+2024-11-24 09:45:31,487 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+2024-11-24 09:45:31,499 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.
+2024-11-24 09:45:36,190 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 6.2.5.Final
+2024-11-24 09:45:36,202 INFO c.i.s.SpringbootApplication Starting SpringbootApplication using Java 1.8.0_151 on 192.168.0.194 with PID 23480 (/Users/luohao/github/sakila-api/target/classes started by luohao in /Users/luohao/github/sakila-api)
+2024-11-24 09:45:36,204 INFO c.i.s.SpringbootApplication No active profile set, falling back to 1 default profile: "default"
+2024-11-24 09:45:37,726 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8088 (http)
+2024-11-24 09:45:37,738 INFO o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:45:37,739 INFO o.a.c.c.StandardService Starting service [Tomcat]
+2024-11-24 09:45:37,739 INFO o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-11-24 09:45:37,873 INFO o.a.c.c.C.[.[.[/] Initializing Spring embedded WebApplicationContext
+2024-11-24 09:45:37,873 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1601 ms
+2024-11-24 09:45:38,508 INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static java.lang.String com.imooc.springboot.utils.MessageUtils.configLang
+2024-11-24 09:45:38,948 INFO o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:45:38,974 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-24 09:45:38,986 INFO c.i.s.SpringbootApplication Started SpringbootApplication in 3.325 seconds (JVM running for 3.751)
+2024-11-24 09:45:41,112 INFO o.a.c.c.C.[.[.[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 09:45:41,112 INFO o.s.w.s.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2024-11-24 09:45:41,114 INFO o.s.w.s.DispatcherServlet Completed initialization in 1 ms
+2024-11-24 09:45:41,220 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+2024-11-24 09:45:41,438 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+2024-11-24 09:45:49,665 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+2024-11-24 09:45:49,676 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.
+2024-11-24 09:45:53,043 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 6.2.5.Final
+2024-11-24 09:45:53,054 INFO c.i.s.SpringbootApplication Starting SpringbootApplication using Java 1.8.0_151 on 192.168.0.194 with PID 23490 (/Users/luohao/github/sakila-api/target/classes started by luohao in /Users/luohao/github/sakila-api)
+2024-11-24 09:45:53,055 INFO c.i.s.SpringbootApplication No active profile set, falling back to 1 default profile: "default"
+2024-11-24 09:45:54,576 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8088 (http)
+2024-11-24 09:45:54,586 INFO o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:45:54,587 INFO o.a.c.c.StandardService Starting service [Tomcat]
+2024-11-24 09:45:54,587 INFO o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-11-24 09:45:54,712 INFO o.a.c.c.C.[.[.[/] Initializing Spring embedded WebApplicationContext
+2024-11-24 09:45:54,712 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1597 ms
+2024-11-24 09:45:55,442 INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static java.lang.String com.imooc.springboot.utils.MessageUtils.configLang
+2024-11-24 09:45:55,856 INFO o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:45:55,878 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-24 09:45:55,890 INFO c.i.s.SpringbootApplication Started SpringbootApplication in 3.377 seconds (JVM running for 3.793)
+2024-11-24 09:45:56,312 INFO o.a.c.c.C.[.[.[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 09:45:56,313 INFO o.s.w.s.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2024-11-24 09:45:56,314 INFO o.s.w.s.DispatcherServlet Completed initialization in 1 ms
+2024-11-24 09:45:56,409 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+2024-11-24 09:45:56,615 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+2024-11-24 09:47:31,784 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+2024-11-24 09:47:31,796 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.
+2024-11-24 09:47:36,634 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 6.2.5.Final
+2024-11-24 09:47:36,642 INFO c.i.s.SpringbootApplication Starting SpringbootApplication using Java 1.8.0_151 on 192.168.0.194 with PID 23527 (/Users/luohao/github/sakila-api/target/classes started by luohao in /Users/luohao/github/sakila-api)
+2024-11-24 09:47:36,643 INFO c.i.s.SpringbootApplication No active profile set, falling back to 1 default profile: "default"
+2024-11-24 09:47:38,177 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8088 (http)
+2024-11-24 09:47:38,187 INFO o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:47:38,188 INFO o.a.c.c.StandardService Starting service [Tomcat]
+2024-11-24 09:47:38,188 INFO o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-11-24 09:47:38,325 INFO o.a.c.c.C.[.[.[/] Initializing Spring embedded WebApplicationContext
+2024-11-24 09:47:38,325 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1611 ms
+2024-11-24 09:47:38,962 INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static java.lang.String com.imooc.springboot.utils.MessageUtils.configLang
+2024-11-24 09:47:39,333 INFO o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:47:39,353 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-24 09:47:39,363 INFO c.i.s.SpringbootApplication Started SpringbootApplication in 3.301 seconds (JVM running for 3.736)
+2024-11-24 09:47:50,305 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 6.2.5.Final
+2024-11-24 09:47:50,313 INFO c.i.s.SpringbootApplication Starting SpringbootApplication using Java 1.8.0_151 on 192.168.0.194 with PID 23539 (/Users/luohao/github/sakila-api/target/classes started by luohao in /Users/luohao/github/sakila-api)
+2024-11-24 09:47:50,314 INFO c.i.s.SpringbootApplication No active profile set, falling back to 1 default profile: "default"
+2024-11-24 09:47:51,739 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8088 (http)
+2024-11-24 09:47:51,750 INFO o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:47:51,751 INFO o.a.c.c.StandardService Starting service [Tomcat]
+2024-11-24 09:47:51,751 INFO o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-11-24 09:47:51,873 INFO o.a.c.c.C.[.[.[/] Initializing Spring embedded WebApplicationContext
+2024-11-24 09:47:51,873 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1502 ms
+2024-11-24 09:47:52,531 INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static java.lang.String com.imooc.springboot.utils.MessageUtils.configLang
+2024-11-24 09:47:52,929 INFO o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:47:52,953 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-24 09:47:52,964 INFO c.i.s.SpringbootApplication Started SpringbootApplication in 3.202 seconds (JVM running for 3.607)
+2024-11-24 09:47:58,379 INFO o.a.c.c.C.[.[.[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 09:47:58,379 INFO o.s.w.s.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2024-11-24 09:47:58,380 INFO o.s.w.s.DispatcherServlet Completed initialization in 1 ms
+2024-11-24 09:47:58,478 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+2024-11-24 09:47:58,677 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+2024-11-24 09:49:29,462 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+2024-11-24 09:49:29,473 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.
+2024-11-24 09:50:08,689 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 6.2.5.Final
+2024-11-24 09:50:08,689 INFO c.i.s.SpringbootApplication Starting SpringbootApplication using Java 1.8.0_151 on 192.168.0.194 with PID 23577 (/Users/luohao/github/sakila-api/target/classes started by luohao in /Users/luohao/github/sakila-api)
+2024-11-24 09:50:08,691 INFO c.i.s.SpringbootApplication No active profile set, falling back to 1 default profile: "default"
+2024-11-24 09:50:10,187 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8088 (http)
+2024-11-24 09:50:10,197 INFO o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:50:10,198 INFO o.a.c.c.StandardService Starting service [Tomcat]
+2024-11-24 09:50:10,198 INFO o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-11-24 09:50:10,320 INFO o.a.c.c.C.[.[.[/] Initializing Spring embedded WebApplicationContext
+2024-11-24 09:50:10,320 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1573 ms
+2024-11-24 09:50:10,958 INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static java.lang.String com.imooc.springboot.utils.MessageUtils.configLang
+2024-11-24 09:50:11,348 INFO o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:50:11,369 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-24 09:50:11,380 INFO c.i.s.SpringbootApplication Started SpringbootApplication in 3.251 seconds (JVM running for 3.661)
+2024-11-24 09:50:24,750 INFO o.a.c.c.C.[.[.[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 09:50:24,750 INFO o.s.w.s.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2024-11-24 09:50:24,751 INFO o.s.w.s.DispatcherServlet Completed initialization in 1 ms
+2024-11-24 09:50:24,852 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+2024-11-24 09:50:25,059 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
+2024-11-24 09:51:41,778 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown initiated...
+2024-11-24 09:51:41,787 INFO c.z.h.HikariDataSource HikariPool-1 - Shutdown completed.
+2024-11-24 09:51:45,374 INFO o.h.v.i.u.Version HV000001: Hibernate Validator 6.2.5.Final
+2024-11-24 09:51:45,384 INFO c.i.s.SpringbootApplication Starting SpringbootApplication using Java 1.8.0_151 on 192.168.0.194 with PID 23625 (/Users/luohao/github/sakila-api/target/classes started by luohao in /Users/luohao/github/sakila-api)
+2024-11-24 09:51:45,385 INFO c.i.s.SpringbootApplication No active profile set, falling back to 1 default profile: "default"
+2024-11-24 09:51:46,934 INFO o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 8088 (http)
+2024-11-24 09:51:46,952 INFO o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:51:46,952 INFO o.a.c.c.StandardService Starting service [Tomcat]
+2024-11-24 09:51:46,953 INFO o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-11-24 09:51:47,091 INFO o.a.c.c.C.[.[.[/] Initializing Spring embedded WebApplicationContext
+2024-11-24 09:51:47,091 INFO o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1644 ms
+2024-11-24 09:51:47,762 INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static java.lang.String com.imooc.springboot.utils.MessageUtils.configLang
+2024-11-24 09:51:48,167 INFO o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-8088"]
+2024-11-24 09:51:48,192 INFO o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 8088 (http) with context path ''
+2024-11-24 09:51:48,205 INFO c.i.s.SpringbootApplication Started SpringbootApplication in 3.391 seconds (JVM running for 3.796)
+2024-11-24 09:51:48,602 INFO o.a.c.c.C.[.[.[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-24 09:51:48,602 INFO o.s.w.s.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2024-11-24 09:51:48,604 INFO o.s.w.s.DispatcherServlet Completed initialization in 1 ms
+2024-11-24 09:51:48,706 INFO c.z.h.HikariDataSource HikariPool-1 - Starting...
+2024-11-24 09:51:48,917 INFO c.z.h.HikariDataSource HikariPool-1 - Start completed.
