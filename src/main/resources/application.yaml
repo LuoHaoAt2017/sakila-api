@@ -19,9 +19,6 @@ server:
   error:
     include-message: always # 去哪里查
 
-logging:
-  config: classpath:logback-spring.xml
-
 mybatis-plus:
   global-config:
     db-config:
