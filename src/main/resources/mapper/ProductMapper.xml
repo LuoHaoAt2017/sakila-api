@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.springboot.mapper.ProductMapper">
+    
+<!--    <resultMap id="resultMap" type="com.imooc.springboot.entity.Product">-->
+<!--        <result column="prod_id" property="prodId"></result>-->
+<!--        <result column="prod_name" property="prodName"></result>-->
+<!--        <result column="prod_price" property="prodPrice"></result>-->
+<!--        <result column="prod_desc" property="prodDesc"></result>-->
+<!--        <result column="vend_id" property="vendId"></result>-->
+<!--        <result column="vend_name" property="vendName"></result>-->
+<!--        <result column="vend_state" property="vendState"></result>-->
+<!--        <result column="vend_city" property="vendCity"></result>-->
+<!--        <result column="vend_country" property="vendCountry"></result>-->
+<!--        <result column="vend_address" property="vendAddress"></result>-->
+<!--    </resultMap>-->
+
+    <select id="queryList" resultType="com.imooc.springboot.model.view.ProductView">
+        select
+        p.prod_id,
+        p.prod_name,
+        p.prod_price,
+        p.prod_desc,
+        v.vend_id,
+        v.vend_name,
+        v.vend_state,
+        v.vend_city,
+        v.vend_country,
+        v.vend_address
+        from product p left join vendor v
+        on p.vend_id = v.vend_id
+        WHERE p.deleted = 0
+        <if test="condition.prodName != null and condition.prodName != ''">
+            AND p.prod_name like CONCAT('%',#{condition.prodName,jdbcType=VARCHAR}, '%')
+        </if>
+    </select>
+
+    <select id="queryPage" resultType="com.imooc.springboot.model.view.ProductView">
+        select
+        p.prod_id,
+        p.prod_name,
+        p.prod_price,
+        p.prod_desc,
+        v.vend_id,
+        v.vend_name,
+        v.vend_state,
+        v.vend_city,
+        v.vend_country,
+        v.vend_address
+        from product p left join vendor v
+        on p.vend_id = v.vend_id
+        WHERE p.deleted = 0
+        <if test="condition.prodName != null and condition.prodName != ''">
+            AND p.prod_name like CONCAT('%',#{condition.prodName,jdbcType=VARCHAR}, '%')
+        </if>
+    </select>
+</mapper>

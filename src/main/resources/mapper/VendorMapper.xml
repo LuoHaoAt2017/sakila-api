@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.springboot.mapper.VendorMapper">
+    <select id="queryPage"
+            resultType="com.imooc.springboot.model.view.VendorView">
+        select v.vend_id, v.vend_name, v.vend_address from vendor v where v.deleted = 0
+        <if test="condition.vendName != null and condition.vendName != ''">
+            AND v.vend_name like CONCAT('%', #{condition.vendName, jdbcType=VARCHAR}, '%')
+        </if>
+    </select>
+
+    <select id="queryList"
+            parameterType="com.imooc.springboot.model.condition.VendorCondition"
+            resultType="com.imooc.springboot.model.view.VendorView">
+        select v.vend_id, v.vend_name, v.vend_address from vendor v where v.deleted = 0
+        <if test="condition.vendName != null and condition.vendName != ''">
+            AND v.vend_name like CONCAT('%', #{condition.vendName, jdbcType=VARCHAR}, '%')
+        </if>
+    </select>
+</mapper>

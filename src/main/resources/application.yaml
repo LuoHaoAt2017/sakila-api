@@ -1,0 +1,35 @@
+# Application Properties https://docs.spring.io/spring-boot/appendix/application-properties/index.html
+spring:
+  application:
+    name: springboot
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/sakila?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: LuoHao@123 #123456 LuoHao@123
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  messages:
+    basename: static/i18n/messages  #国际化 相对路径 开头请勿添加斜杠
+    encoding: UTF-8
+
+server:
+  port: 8088
+  error:
+    include-message: always # 去哪里查
+
+logging:
+  config: classpath:logback-spring.xml
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deleted # 全局逻辑删除字段名
+      logic-delete-value: 1 # 逻辑已删除值
+      logic-not-delete-value: 0 # 逻辑未删除值
+  mapper-locations: classpath*:mapper/*.xml
+
+common-config:
+  timezone-offset: 8
+  location: en-US # 国际化默认采用中文 zh-CN en-US
