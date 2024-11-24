@@ -17,10 +17,10 @@ public enum ResCode {
     /**
      * 返回编码
      */
-    private String code;
+    private final String code;
 
     /**
      * 编码描述
      */
-    private String description;
+    private final String description;
 }
