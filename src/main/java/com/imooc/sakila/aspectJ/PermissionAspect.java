@@ -3,7 +3,7 @@ package com.imooc.sakila.aspectJ;
 import com.imooc.sakila.annotation.HasPermission;
 import com.imooc.sakila.enums.LogCode;
 import com.imooc.sakila.constants.Permission;
-import com.imooc.sakila.utils.NoPermissionException;
+import com.imooc.sakila.utils.PermissionException;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -27,10 +27,10 @@ public class PermissionAspect {
             if (includePermission(methodPermissions)) {
                 return pjp.proceed();
             } else {
-                throw new NoPermissionException(LogCode.NO_PERMISSION);
+                throw new PermissionException(LogCode.NO_PERMISSION);
             }
         } catch (Exception ex) {
-            throw new NoPermissionException(LogCode.NO_PERMISSION);
+            throw new PermissionException(LogCode.NO_PERMISSION);
         }
     }
 
