@@ -1,42 +1,42 @@
 package com.imooc.sakila.model;
 
-import com.imooc.sakila.enums.ResponseCodeEnum;
+import com.imooc.sakila.enums.ResCode;
 import lombok.Data;
 
 /**
  *  @Data 提供的注解，它可以自动为类生成常用的方法，包括 getter、setter、equals、hashCode 和 toString 等。使用 @Data 注解可以简化代码，使代码更加简洁易读。
  */
 @Data
-public class ResponseModel<T> {
+public class RespModel<T> {
     private String code;
     private String msgCode;
     private T data;
 
-    public ResponseModel(){
+    public RespModel(){
     }
 
-    public ResponseModel(T data){
-        this.code = ResponseCodeEnum.SUCCESS.getCode();
-        this.msgCode = ResponseCodeEnum.SUCCESS.getDescription();
+    public RespModel(T data){
+        this.code = ResCode.SUCCESS.getCode();
+        this.msgCode = ResCode.SUCCESS.getDescription();
         this.data = data;
     }
 
-    public ResponseModel(ResponseCodeEnum responseCodeEnum){
+    public RespModel(ResCode responseCodeEnum){
         this.code = responseCodeEnum.getCode();
         this.msgCode = responseCodeEnum.getDescription();
     }
 
-    public ResponseModel(ResponseCodeEnum responseCodeEnum, T data) {
+    public RespModel(ResCode responseCodeEnum, T data) {
         this.code = responseCodeEnum.getCode();
         this.msgCode = responseCodeEnum.getDescription();
         this.data = data;
     }
 
-    public static ResponseModel<String> failed() {
-        return new ResponseModel<>(ResponseCodeEnum.FAILED);
+    public static RespModel<String> failed() {
+        return new RespModel<>(ResCode.FAILED);
     }
 
-    public static ResponseModel<String> success() {
-        return new ResponseModel<>(ResponseCodeEnum.SUCCESS);
+    public static RespModel<String> success() {
+        return new RespModel<>(ResCode.SUCCESS);
     }
 }

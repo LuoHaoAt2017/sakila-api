@@ -1,5 +1,5 @@
 package com.imooc.sakila.aspectJ;
-import com.imooc.sakila.model.ResponseModel;
+import com.imooc.sakila.model.RespModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.MethodParameter;
@@ -23,6 +23,6 @@ public class HttpRespBodyAdvice implements ResponseBodyAdvice<Object> {
 
     @Override
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
-        return new ResponseModel<>(body);
+        return new RespModel<>(body);
     }
 }

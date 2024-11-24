@@ -1,8 +1,8 @@
 package com.imooc.sakila.aspectJ;
 
 import com.imooc.sakila.annotation.HasPermission;
-import com.imooc.sakila.constants.LogCode;
-import com.imooc.sakila.constants.PermissionConst;
+import com.imooc.sakila.enums.LogCode;
+import com.imooc.sakila.constants.Permission;
 import com.imooc.sakila.utils.NoPermissionException;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -37,9 +37,9 @@ public class PermissionAspect {
     // todo 获取当前登录用户具有的权限列表
     private boolean includePermission(String[] permissions) {
         List<String> userPermissions = new ArrayList<>();
-        userPermissions.add(PermissionConst.product_list);
-        userPermissions.add(PermissionConst.product_add);
-        userPermissions.add(PermissionConst.product_delete);
+        userPermissions.add(Permission.product_list);
+        userPermissions.add(Permission.product_add);
+        userPermissions.add(Permission.product_delete);
         for (String permission : permissions) {
             if (userPermissions.contains(permission)) {
                 return true;

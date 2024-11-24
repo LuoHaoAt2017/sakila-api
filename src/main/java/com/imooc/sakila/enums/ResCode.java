@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum ResponseCodeEnum {
+public enum ResCode {
     /**
      * 成功
      */

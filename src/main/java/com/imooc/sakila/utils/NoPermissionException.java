@@ -1,6 +1,6 @@
 package com.imooc.sakila.utils;
 
-import com.imooc.sakila.constants.LogCode;
+import com.imooc.sakila.enums.LogCode;
 
 public class NoPermissionException extends RuntimeException {
 
