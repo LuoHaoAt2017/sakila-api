@@ -17,9 +17,11 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(authorize -> {
-            authorize.anyRequest().authenticated();
-        }).httpBasic(withDefaults());
+        // 所有的请求都不需要认证。Auth Type 采用 Basic Auth 的方式。
+        http.authorizeHttpRequests(authorize -> authorize.anyRequest().authenticated())
+                .httpBasic(withDefaults())
+                .formLogin(withDefaults());
+
         return http.build();
     }
 
@@ -27,12 +29,12 @@ public class SecurityConfig {
     public InMemoryUserDetailsManager userDetailsManager() {
         UserDetails user = User.withDefaultPasswordEncoder()
                 .username("user")
-                .password("password")
+                .password("123456")
                 .roles("USER")
                 .build();
         UserDetails admin = User.withDefaultPasswordEncoder()
                 .username("admin")
-                .password("password")
+                .password("123456")
                 .roles("USER", "ADMIN")
                 .build();
         return new InMemoryUserDetailsManager(user, admin);

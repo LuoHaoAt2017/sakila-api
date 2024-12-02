@@ -2,7 +2,7 @@
 <configuration>
 
     <!-- 定义日志文件的存储路径 -->
-    <property name="LOG_HOME" value="D:/share/logs"/>
+<!--    <property name="LOG_HOME" value="D:/share/logs"/>-->
 
     <!-- 定义日志文件的名称 -->
 <!--    <property name="LOG_HOME_INFO" value="${LOG_HOME}/info/"/>-->
