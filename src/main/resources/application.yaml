@@ -6,7 +6,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/sakila?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: LuoHao@123 #123456 LuoHao@123
+    password: 123456 # Win 123456 Mac LuoHao@123
   servlet:
     multipart:
       max-file-size: 10MB
