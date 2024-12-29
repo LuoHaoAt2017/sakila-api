@@ -30,3 +30,7 @@ mybatis-plus:
 common-config:
   timezone-offset: 8
   location: en-US # 国际化默认采用中文 zh-CN en-US
+
+logging:
+  level:
+    org.springframework.security: DEBUG
