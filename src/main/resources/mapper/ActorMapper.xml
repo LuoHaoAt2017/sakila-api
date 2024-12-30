@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.sakila.mapper.ActorMapper">
+    <select id="queryActorList" resultType="com.imooc.sakila.model.view.ActorVo">
+        SELECT a.actor_id, CONCAT(a.last_name, ' ', a.first_name) AS actor_name FROM actor a
+    </select>
+</mapper>

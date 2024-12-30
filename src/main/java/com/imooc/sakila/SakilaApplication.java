@@ -6,6 +6,7 @@ import org.springframework.boot.SpringBootVersion;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.SpringVersion;
 
+
 @SpringBootApplication
 @MapperScan("com.imooc.sakila.mapper")
 public class SakilaApplication {
@@ -15,5 +16,4 @@ public class SakilaApplication {
 		System.out.println("Spring Boot 版本号：" + SpringBootVersion.getVersion());
 		SpringApplication.run(SakilaApplication.class, args);
 	}
-
 }

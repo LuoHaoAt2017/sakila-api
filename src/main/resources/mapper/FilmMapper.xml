@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.imooc.sakila.mapper.FilmMapper">
-
+<mapper namespace="com.imooc.sakila.mapper.FimlMapper">
+    <select id="queryFilmList" resultType="com.imooc.sakila.model.view.FilmVo">
+        SELECT f.film_id, f.title AS film_name, a.actor_id, CONCAT(a.last_name, ' ', a.first_name) AS actor_name
+        FROM film f
+        LEFT JOIN film_actor fa ON f.film_id = fa.film_id
+        LEFT JOIN actor a ON a.actor_id = fa.actor_id
+        WHERE a.actor_id = #{actorId}
+    </select>
 </mapper>
